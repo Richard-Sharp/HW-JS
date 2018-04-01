@@ -1,25 +1,23 @@
-let	money = +prompt('Ваш бюджет на месяц?');
-let shopName = prompt('Название вашего магазина?');
-let shopGoods = [prodOne = prompt('Что будем продавать?'),
-			 prodTwo = prompt('Что будем продавать?'),
-			 prodTree = prompt('Что будем продавать?')];
-employers = {
-	employer1: 'Jhon',
-	employer2: 'Bob',
-	employer3: "Bill",
-};
+let num = '33721';
+let numArr = num.split('');
+console.log (numArr);
 
-let win = window.open();
-
-mainList = {
-	money,
-	shopName,
-	shopGoods,
-	employers,	
-	Open: true
+//let ArrNummber = +numArr[0];
+for(var i = 0; i < numArr.length; i++) {
+    numArr[i] = +numArr[i];
 }
 
-console.log(mainList);
-let = moneyDay = money / 30;
-console.log(moneyDay);
-alert('Ваш бюджет на день: ' + moneyDay);
+//console.log(ArrNummber);
+console.log(numArr);
+let count = numArr[0];
+for(var i = 1; i < numArr.length; i++) {
+    count *= numArr[i];
+}
+
+
+// let count = numArr[0] * numArr[1] * numArr[2] * numArr[3] * numArr[4] * numArr[5];
+
+console.log (count);
+let res = count**3;
+console.log (res);
+alert('Полученный результат: ' + res);
